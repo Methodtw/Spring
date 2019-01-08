@@ -1,4 +1,3 @@
-
 package fr.wildcodeschool.thewizardproject.controllers;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -8,7 +7,7 @@ public class App {
 	public void start() {
     ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
 
-    WizardInterface wizard = context.getBean("theWizard", WizardInterface.class);
+    WizardInterface wizard = context.getBean("dumbledore", WizardInterface.class);
 
     context.close();
 
