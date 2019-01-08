@@ -1,15 +1,13 @@
-package com.wildcodeschool.myLibrary.controllers;
+package fr.wildcodeschool.thewizardproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyLibraryApplication {
+public class TheWizardProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyLibraryApplication.class, args);
-		App myApp = new App();
-        myApp.start();
+		SpringApplication.run(TheWizardProjectApplication.class, args);
 	}
 
 }
