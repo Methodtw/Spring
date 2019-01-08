@@ -6,11 +6,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="theWizardDress" class="fr.wildcodeschool.thewizardproject.models.WhiteDress">
-    </bean>
-    <!-- We will define our beans here : -->
-    <bean id="theWizard" class="fr.wildcodeschool.thewizardproject.models.Gandalf">
-    <constructor-arg ref="theWizardDress"/>
-    </bean>
+    <context:component-scan base-package="fr.wildcodeschool.thewizardproject.models"> 
+    </context:component-scan>
 
 </beans>

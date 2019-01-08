@@ -1,17 +1,22 @@
 package fr.wildcodeschool.thewizardproject.models;
 
-public class Gandalf implements WizardInterface {
-    private Outfit wizardDress;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-    public Gandalf(Outfit theDress) {
+@Component("theWizard")
+public class Gandalf implements WizardInterface {
+	private Outfit wizardDress;
+	
+	@Autowired
+    public Gandalf(@Qualifier("WhiteDress")Outfit theDress) {
         wizardDress = theDress;
     }
-
     @Override
     public String displayDress() {
         return this.wizardDress.changeDress();
     }
 	public String giveAdvice() {	
-		return "You shall not pass";
+		return "You Shall Not Pass";
 	}
 }

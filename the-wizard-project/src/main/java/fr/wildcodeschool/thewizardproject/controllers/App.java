@@ -2,7 +2,6 @@
 package fr.wildcodeschool.thewizardproject.controllers;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import fr.wildcodeschool.thewizardproject.models.WizardInterface;
 
 public class App {
